@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="A special aesthetic birthday surprise for Vanshika."
+  >
+
+  <title>Happy Birthday Vanshika</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Decorative background particles -->
+  <div class="floating-particles" aria-hidden="true">
+    <span>✦</span>
+    <span>♡</span>
+    <span>✧</span>
+    <span>✦</span>
+    <span>♡</span>
+    <span>✧</span>
+  </div>
+
+  <!-- Password screen -->
+  <section id="passwordScreen" class="gate-screen active-screen">
+
+    <div class="gate-card">
+
+      <p class="small-label">A PRIVATE BIRTHDAY EXPERIENCE</p>
+
+      <h1>
+        A Secret Surprise
+        <span>Awaits You</span>
+      </h1>
+
+      <p class="gate-description">
+        This little world was created for someone truly special.
+      </p>
+
+      <div class="password-box">
+        <label for="passwordInput">Enter the secret password</label>
+
+        <div class="input-row">
+          <input
+            type="password"
+            id="passwordInput"
+            placeholder="Type the password..."
+            autocomplete="off"
+          >
+
+          <button
+            type="button"
+            id="togglePassword"
+            class="icon-button"
+            aria-label="Show or hide password"
+          >
+            👁
+          </button>
+        </div>
+
+        <p class="password-hint">
+          Hint: the two happiest words of a birthday.
+        </p>
+
+        <button
+          type="button"
+          id="unlockButton"
+          class="main-button"
+        >
+          Unlock the Surprise
+        </button>
+
+        <p id="passwordMessage" class="form-message"></p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Birthday confirmation -->
+  <section id="questionScreen" class="gate-screen">
+
+    <div class="gate-card question-card">
+
+      <p class="small-label">ONE IMPORTANT QUESTION</p>
+
+      <h2>
+        Wait a moment…
+      </h2>
+
+      <p class="question-text">
+        Is today really your birthday?
+      </p>
+
+      <div class="question-buttons">
+
+        <button
+          type="button"
+          id="yesButton"
+          class="main-button"
+        >
+          Yes, it is 🎂
+        </button>
+
+        <button
+          type="button"
+          id="noButton"
+          class="secondary-button"
+        >
+          No, it isn't 🙈
+        </button>
+
+      </div>
+
+      <p id="questionMessage" class="form-message"></p>
+
+    </div>
+
+  </section>
+
+  <!-- Loading screen -->
+  <section id="loadingScreen" class="gate-screen">
+
+    <div class="loading-content">
+
+      <div class="loading-heart">♡</div>
+
+      <p id="loadingText">
+        Preparing your surprise…
+      </p>
+
+      <div class="loading-line">
+        <span></span>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Main website -->
+  <main id="mainWebsite" class="website-hidden">
+
+    <!-- Navigation -->
+    <header class="site-header">
+
+      <a href="#home" class="logo">
+        For Vanshika ♡
+      </a>
+
+      <button
+        type="button"
+        id="menuButton"
+        class="menu-button"
+        aria-label="Open menu"
+      >
+        ☰
+      </button>
+
+      <nav id="navigationMenu" class="navigation">
+
+        <a href="#home">Birthday</a>
+        <a href="#letter">Dear Vanshika</a>
+        <a href="#memories">Memories</a>
+        <a href="#library">Secret Library</a>
+        <a href="#final">One Last Thing</a>
+
+      </nav>
+
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero-section">
+
+      <div class="hero-image"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content reveal">
+
+        <p class="hero-small-text">
+          A LITTLE CELEBRATION FOR
+        </p>
+
+        <h1>
+          Happy Birthday
+          <span>Vanshika</span>
+        </h1>
+
+        <p class="hero-message">
+          For the girl whose curiosity never ends,
+          whose dreams are never ordinary,
+          and whose presence makes memories more beautiful.
+        </p>
+
+        <a href="#letter" class="main-button link-button">
+          Open Your Birthday Note
+        </a>
+
+      </div>
+
+      <a
+        href="#letter"
+        class="scroll-indicator"
+        aria-label="Scroll to birthday note"
+      >
+        <span>Scroll</span>
+        <div>↓</div>
+      </a>
+
+    </section>
+
+    <!-- Birthday wish -->
+    <section class="birthday-wish-section section-padding">
+
+      <div class="section-heading reveal">
+
+        <p class="small-label">TODAY IS YOUR DAY</p>
+
+        <h2>
+          A Day Made a Little More Beautiful
+        </h2>
+
+        <p>
+          Today is not just another date on the calendar.
+          It is a reminder that someone thoughtful, curious,
+          ambitious and wonderfully unique entered this world.
+        </p>
+
+      </div>
+
+      <div class="wish-grid">
+
+        <article class="wish-card reveal">
+          <span>01</span>
+          <h3>More Courage</h3>
+          <p>
+            May you always have the courage to choose your own path.
+          </p>
+        </article>
+
+        <article class="wish-card reveal">
+          <span>02</span>
+          <h3>More Knowledge</h3>
+          <p>
+            May every book and every experience open a new world for you.
+          </p>
+        </article>
+
+        <article class="wish-card reveal">
+          <span>03</span>
+          <h3>More Happiness</h3>
+          <p>
+            May your days be filled with calm moments and genuine smiles.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- Handwritten letter -->
+    <section id="letter" class="letter-section section-padding">
+
+      <div class="letter-photo reveal">
+
+        <img
+          src="vanshika2.jpg.jpg"
+          alt="Vanshika"
+          loading="lazy"
+        >
+
+        <div class="photo-tape"></div>
+
+      </div>
+
+      <article class="paper-letter reveal">
+
+        <p class="letter-date">
+          A note written especially for you
+        </p>
+
+        <h2>Dear Vanshika,</h2>
+
+        <div class="letter-body">
+
+          <p>
+            Happy Birthday to one of the most curious and thoughtful
+            people I know.
+          </p>
+
+          <p>
+            You have a beautiful habit of thinking deeply,
+            asking questions and trying to understand the world
+            beyond what appears on the surface.
+          </p>
+
+          <p>
+            I hope this new year of your life brings you more confidence,
+            meaningful opportunities and the strength to build every dream
+            that quietly lives inside your mind.
+          </p>
+
+          <p>
+            May you continue learning, reading, creating and discovering
+            new versions of yourself.
+          </p>
+
+          <p>
+            Never feel that your dreams are too big.
+            A curious mind like yours was never meant for an ordinary life.
+          </p>
+
+          <p>
+            May this birthday become the beginning of a year filled with
+            powerful ideas, beautiful memories and many reasons to smile.
+          </p>
+
+        </div>
+
+        <p class="letter-signature">
+          Keep shining, always ♡
+        </p>
+
+      </article>
+
+    </section>
+
+    <!-- Memories -->
+    <section id="memories" class="memories-section section-padding">
+
+      <div class="section-heading reveal">
+
+        <p class="small-label">A FEW BEAUTIFUL MOMENTS</p>
+
+        <h2>Memories Worth Keeping</h2>
+
+        <p>
+          Some photographs do more than capture a face.
+          They hold a feeling, a moment and a story.
+        </p>
+
+      </div>
+
+      <div class="memory-grid">
+
+        <button
+          type="button"
+          class="memory-card memory-large reveal"
+          data-image="vanshika1.jpg.jpg"
+          data-caption="A beautiful moment worth remembering."
+        >
+
+          <img
+            src="vanshika1.jpg.jpg"
+            alt="A memory of Vanshika"
+            loading="lazy"
+          >
+
+          <span>
+            A beautiful beginning
+          </span>
+
+        </button>
+
+        <button
+          type="button"
+          class="memory-card reveal"
+          data-image="vanshika2.jpg.jpg"
+          data-caption="A smile that makes ordinary moments special."
+        >
+
+          <img
+            src="vanshika2.jpg.jpg"
+            alt="Vanshika smiling"
+            loading="lazy"
+          >
+
+          <span>
+            A smile worth keeping
+          </span>
+
+        </button>
+
+        <button
+          type="button"
+          class="memory-card reveal"
+          data-image="vanshika3.jpg.jpg"
+          data-caption="A memory for the final page of this little story."
+        >
+
+          <img
+            src="vanshika3.jpg.jpg"
+            alt="A special photograph of Vanshika"
+            loading="lazy"
+          >
+
+          <span>
+            One for the heart
+          </span>
+
+        </button>
+
+      </div>
+
+    </section>
+
+    <!-- Personality cards -->
+    <section class="personality-section section-padding">
+
+      <div class="section-heading reveal">
+
+        <p class="small-label">THE THINGS THAT MAKE YOU, YOU</p>
+
+        <h2>Her Beautiful Little World</h2>
+
+      </div>
+
+      <div class="personality-grid">
+
+        <article class="personality-card reveal">
+          <div class="personality-icon">✦</div>
+          <h3>The Curious Mind</h3>
+          <p>
+            She does not only want an answer.
+            She wants to understand why that answer exists.
+          </p>
+        </article>
+
+        <article class="personality-card reveal">
+          <div class="personality-icon">📖</div>
+          <h3>The Book Lover</h3>
+          <p>
+            Every book is another doorway into psychology,
+            business, ideas and human behaviour.
+          </p>
+        </article>
+
+        <article class="personality-card reveal">
+          <div class="personality-icon">☁</div>
+          <h3>The Deep Thinker</h3>
+          <p>
+            Ordinary thoughts often become meaningful questions
+            inside her mind.
+          </p>
+        </article>
+
+        <article class="personality-card reveal">
+          <div class="personality-icon">✧</div>
+          <h3>The Dream Builder</h3>
+          <p>
+            She does not just imagine a better future.
+            She wants to learn how to build it.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- Library -->
+    <section id="library" class="library-section section-padding">
+
+      <div class="library-intro reveal">
+
+        <p class="small-label">YOUR BIRTHDAY SURPRISE</p>
+
+        <h2>Vanshika's Secret Library</h2>
+
+        <p>
+          Because the best gift for a curious mind
+          is a new idea waiting to be discovered.
+        </p>
+
+        <div class="library-quote">
+          “I could not wrap curiosity inside a gift box,
+          so I created a little library for it.”
+        </div>
+
+      </div>
+
+      <div class="book-grid">
+
+        <!-- Atomic Habits -->
+        <article class="book-card reveal">
+
+          <div class="book-cover">
+            <img
+              src="atomichabits.jpg.jpg"
+              alt="Atomic Habits book cover"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="book-info">
+
+            <p class="book-category">Habits & Self-growth</p>
+            <h3>Atomic Habits</h3>
+            <p class="book-author">James Clear</p>
+
+            <button
+              type="button"
+              class="read-button"
+              data-book="atomic"
+            >
+              Read Simple Summary
+            </button>
+
+          </div>
+
+        </article>
+
+        <!-- Psychology of Money -->
+        <article class="book-card reveal">
+
+          <div class="book-cover">
+            <img
+              src="psychologyofmoney.jpg.jpg"
+              alt="The Psychology of Money book cover"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="book-info">
+
+            <p class="book-category">Money & Behaviour</p>
+            <h3>The Psychology of Money</h3>
+            <p class="book-author">Morgan Housel</p>
+
+            <button
+              type="button"
+              class="read-button"
+              data-book="money"
+            >
+              Read Simple Summary
+            </button>
+
+          </div>
+
+        </article>
+
+        <!-- Thinking Fast and Slow -->
+        <article class="book-card reveal">
+
+          <div class="book-cover">
+            <img
+              src="thinkingfastandslow.jpg.jpg"
+              alt="Thinking Fast and Slow book cover"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="book-info">
+
+            <p class="book-category">Thinking & Decisions</p>
+            <h3>Thinking, Fast and Slow</h3>
+            <p class="book-author">Daniel Kahneman</p>
+
+            <button
+              type="button"
+              class="read-button"
+              data-book="thinking"
+            >
+              Read Simple Summary
+            </button>
+
+          </div>
+
+        </article>
+
+        <!-- Zero to One -->
+        <article class="book-card reveal">
+
+          <div class="book-cover">
+            <img
+              src="zerotoone.jpg.jpg"
+              alt="Zero to One book cover"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="book-info">
+
+            <p class="book-category">Business & Startups</p>
+            <h3>Zero to One</h3>
+            <p class="book-author">Peter Thiel</p>
+
+            <button
+              type="button"
+              class="read-button"
+              data-book="zero"
+            >
+              Read Simple Summary
+            </button>
+
+          </div>
+
+        </article>
+
+        <!-- Courage -->
+        <article class="book-card reveal">
+
+          <div class="book-cover">
+            <img
+              src="thecourage.jpg.jpg"
+              alt="The Courage to Be Disliked book cover"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="book-info">
+
+            <p class="book-category">Psychology & Freedom</p>
+            <h3>The Courage to Be Disliked</h3>
+            <p class="book-author">
+              Ichiro Kishimi & Fumitake Koga
+            </p>
+
+            <button
+              type="button"
+              class="read-button"
+              data-book="courage"
+            >
+              Read Simple Summary
+            </button>
+
+          </div>
+
+        </article>
+
+        <!-- Surrounded by Idiots -->
+        <article class="book-card reveal">
+
+          <div class="book-cover">
+            <img
+              src="surroundedbyidiots.jpg.jpg"
+              alt="Surrounded by Idiots book cover"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="book-info">
+
+            <p class="book-category">Personality & Communication</p>
+            <h3>Surrounded by Idiots</h3>
+            <p class="book-author">Thomas Erikson</p>
+
+            <button
+              type="button"
+              class="read-button"
+              data-book="idiots"
+            >
+              Read Simple Summary
+            </button>
+
+          </div>
+
+        </article>
+
+        <!-- 48 Laws -->
+        <article class="book-card reveal">
+
+          <div class="book-cover">
+            <img
+              src="48laws.jpg.jpg"
+              alt="The 48 Laws of Power book cover"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="book-info">
+
+            <p class="book-category">Power & Human Behaviour</p>
+            <h3>The 48 Laws of Power</h3>
+            <p class="book-author">Robert Greene</p>
+
+            <button
+              type="button"
+              class="read-button"
+              data-book="laws"
+            >
+              Read Simple Summary
+            </button>
+
+          </div>
+
+        </article>
+
+        <!-- Mountain -->
+        <article class="book-card reveal">
+
+          <div class="book-cover">
+            <img
+              src="themountainisyou.jpg.jpg"
+              alt="The Mountain Is You book cover"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="book-info">
+
+            <p class="book-category">Healing & Self-growth</p>
+            <h3>The Mountain Is You</h3>
+            <p class="book-author">Brianna Wiest</p>
+
+            <button
+              type="button"
+              class="read-button"
+              data-book="mountain"
+            >
+              Read Simple Summary
+            </button>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- Final section -->
+    <section id="final" class="final-section">
+
+      <div class="final-image"></div>
+      <div class="final-overlay"></div>
+
+      <div class="final-content reveal">
+
+        <p class="small-label light-label">
+          ONE LAST THING
+        </p>
+
+        <h2>
+          Happy Birthday,
+          <span>Vanshika</span>
+        </h2>
+
+        <p>
+          May this year bring you powerful ideas,
+          meaningful books, brave decisions,
+          peaceful moments and a life even more beautiful
+          than the one you imagine.
+        </p>
+
+        <button
+          type="button"
+          id="celebrateButton"
+          class="main-button"
+        >
+          Celebrate Again 🎉
+        </button>
+
+      </div>
+
+      <div id="confettiContainer" class="confetti-container"></div>
+
+    </section>
+
+    <footer class="site-footer">
+
+      <p>
+        Made with care for Vanshika ♡
+      </p>
+
+      <a href="#home">
+        Back to the beginning ↑
+      </a>
+
+    </footer>
+
+  </main>
+
+  <!-- Image modal -->
+  <div
+    id="imageModal"
+    class="modal"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Memory image"
+  >
+
+    <div class="image-modal-content">
+
+      <button
+        type="button"
+        id="closeImageModal"
+        class="close-modal"
+        aria-label="Close image"
+      >
+        ×
+      </button>
+
+      <img id="modalImage" src="" alt="Expanded memory">
+
+      <p id="modalCaption"></p>
+
+    </div>
+
+  </div>
+
+  <!-- Book modal -->
+  <div
+    id="bookModal"
+    class="modal"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Book summary"
+  >
+
+    <article class="book-modal-content">
+
+      <button
+        type="button"
+        id="closeBookModal"
+        class="close-modal"
+        aria-label="Close summary"
+      >
+        ×
+      </button>
+
+      <p id="modalBookCategory" class="book-category"></p>
+
+      <h2 id="modalBookTitle"></h2>
+
+      <p id="modalBookAuthor" class="modal-book-author"></p>
+
+      <div id="modalBookSummary" class="summary-lines"></div>
+
+      <div class="why-box">
+
+        <h3>Why this book may suit Vanshika</h3>
+
+        <p id="modalBookWhy"></p>
+
+      </div>
+
+    </article>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
